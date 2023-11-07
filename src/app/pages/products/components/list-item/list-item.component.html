@@ -1,0 +1,7 @@
+<div class="list-item">
+  <app-item-card
+    *ngFor="let item of listItem"
+    [item]="item"
+    (addToCart)="add($event)"
+  ></app-item-card>
+</div>

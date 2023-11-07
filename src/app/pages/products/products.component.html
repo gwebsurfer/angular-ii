@@ -1,0 +1,7 @@
+<div class="products">
+  <button (click)="openCartModal()">Abrir Carrinho</button>
+  <app-list-item
+    [listItem]="storeItems"
+    (addItemToCart)="addItemToCart($event)"
+  ></app-list-item>
+</div>

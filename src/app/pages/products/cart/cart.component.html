@@ -1,0 +1,16 @@
+MEU CARRINHO
+<div *ngIf="cart.length === 0" class="empty"> Nenhum item no carrinho </div>
+<div *ngIf="cart.length > 0" class="cart">
+  <div class="cart__item" *ngFor="let item of cart">
+    <span class="cart__item__id">{{ item.productId }}</span>
+    <span class="cart__item__qtd">{{ item.quantity }}</span>
+    <div class="cart__item__actions">
+      <button class="cart__item__actions__button" (click)="decrement(item)"
+        >-</button
+      >
+      <button class="cart__item__actions__button" (click)="increment(item)"
+        >+</button
+      >
+    </div>
+  </div>
+</div>

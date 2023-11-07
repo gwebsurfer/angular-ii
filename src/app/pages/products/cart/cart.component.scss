@@ -1,0 +1,15 @@
+.cart {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  &__item {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    &__actions {
+      display: flex;
+      flex-direction: row;
+      gap: 8px;
+    }
+  }
+}
